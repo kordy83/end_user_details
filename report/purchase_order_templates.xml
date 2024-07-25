@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="user_purchaseorder_inherit" inherit_id="purchase.report_purchaseorder_document">
+        <xpath expr="//div[@id='total']" position="after">
+        <strong>End User Details :</strong>
+            <p>
+            <span t-field="o.end_user_retails"/>
+            </p>
+            <strong>Delivery Location :</strong>
+            <p>
+            <span t-field="o.delivery_location"/>
+            </p>
+        </xpath>
+    </template>
+</odoo>
